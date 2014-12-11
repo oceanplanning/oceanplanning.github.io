@@ -1,0 +1,263 @@
+<!doctype html>
+<!--[if lt IE 10]>    <html class="no-js ie-lte9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Oceanplanning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<link rel="stylesheet" href="css/index.min-0cea0819.css">
+
+
+<!--[if lte IE 9]>
+  <style>
+  .modal-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  </style>
+<![endif]-->
+
+</head>
+  <body class="loading">
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container block-group">
+      <!-- MODALS -->
+      <div id="about-modal-all" class="panel modal hide">
+        <div class="modal-background modal-close"></div>
+        <div class="modal-inner">
+          <button class="link modal-close">×</button>
+          <div class="modal-content txt-copy">
+            <h3>Ocean planning</h3>
+            <p>Ocean planning is a multi-stakeholder, data-driven public process to understand what people want for the future of their oceans, analyze the trade-offs among different uses of ocean space and resources, and coordinate management in a way that maximizes ecological, economic, and social values.</p>
+
+            <p>In the last decade, the practice of ocean planning has grown in use across the planet, and for good reason. Ocean planning can be used to improve decision-making and management, protect and conserve ocean wildlife, reduce conflicts among interests, and increase efficiency in the use of public resources such as tax dollars and agency staff time. If done well, ocean planning can yield benefits for coastal communities and ocean industries desiring attractive and healthy seascapes, a more certain regulatory framework and reduced conflicts with other ocean users.</p>
+
+            <p>This approach to managing ocean space and resources is increasingly being adopted by governments in the US and Canada and ocean stakeholders. And, this map provides a window into the proliferation of this approach in these two countries, the individual planning efforts underway and completed, and information about each effort.</p>
+
+            <p>If you have information about a new planning effort or updated data about an effort underway, please let us know! Click on the &ldquo;Feedback?&rdquo; button in the lower right of the map, and we&rsquo;ll work with you to make sure the information for each entry is current.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-modal-us" class="panel modal hide">
+        <div class="modal-background modal-close"></div>
+        <div class="modal-inner">
+          <button class="link modal-close">×</button>
+          <div class="modal-content txt-copy">
+            <h3>United States</h3>
+            <h4>More than 5% of US ocean waters are currently being planned or are already managed with ocean plans.</h4>
+
+            <p>US oceans are home to a vast diversity of ecosystems, including the incredibly productive Gulf of Maine, majestic California kelp forests and the rich coral reefs of Hawaii. Nearly matching this diversity is the array of activities carried out in the ocean by fishermen, shipping vessels, tourism businesses, recreational boaters, conservationists and wildlife advocates, scientists, energy industries, harbormasters, undersea cable companies and all others who enjoy and use the oceans.</p>
+
+            <p>Historically, the US federal government and states have managed the uses and users of US oceans one-by-one and without consideration of cumulative impacts, failing to optimize the value Americans derive from their oceans. However, today in the United States, comprehensive ocean planning efforts are underway at all levels of government, from local to federal. US states such as Oregon, Massachusetts and Rhode Island have developed comprehensive ocean plans for their state waters. The experience and practices of state-based efforts inspired and informed the development of regional planning processes in federal waters (underway in New England, the Mid-Atlantic, US Caribbean, and Western Pacific Islands) under the 2010 National Ocean Policy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-modal-ca" class="panel modal hide">
+        <div class="modal-background modal-close"></div>
+        <div class="modal-inner">
+          <button class="link modal-close">×</button>
+          <div class="modal-content txt-copy">
+            <h3>Canada</h3>
+            <h4>More than 28% of Canadian ocean waters are currently being planned or are already managed with ocean plans.</h4>
+
+            <p>Canadian oceans are home to a magnificent diversity of ecosystems, from the kelp forests of British Columbia to the polynyas (areas of open water surrounded by sea ice) of Lancaster Sound. Nearly matching this diversity is the array of activities carried out in the ocean by fishermen, First Nations and Inuit subsistence hunters, shipping vessels, tourism businesses, recreational boaters, conservationists and wildlife advocates, scientists, energy industries, harbormasters, undersea cable companies, and all others who want to enjoy and use the oceans.</p>
+
+            <p>In 1997, Canada became the first country in the world to mandate integrated ocean management, through the Oceans Act. The Act called for the Minister of Fisheries and Oceans Canada to &ldquo;lead and facilitate the development and implementation of plans for the integrated management of all activities or measures in or affecting estuaries, coastal waters and marine waters...&rdquo; What resulted were some of the world&rsquo;s earliest efforts to apply ocean planning tools and processes to maintain the health of Canada&rsquo;s oceans while maximizing their sustainable use.</p>
+
+            <p>Aboriginal, Provincial, Territorial, and Federal governments have various degrees of jurisdiction over the many activities that take place in Canadian waters. Thus, planning for this large area (7.1 million km2, or 70% the size of Canada&rsquo;s land mass) takes shared objective-setting and broader coordination among the different levels of government. Several First Nations governments, working with provincial government agencies in British Columbia have developed comprehensive ocean plans for their waters. This experience has illustrated that governments working together and with stakeholders is an effective route to generating ocean plans in Canada. It has also shown that ocean plans produce a mosaic of use and conservation that can put coastal communities and the ocean resources on which they depend on a trajectory for a healthy future.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="more-data-modal" class="panel modal hide">
+        <div class="modal-background modal-close"></div>
+        <div class="modal-inner">
+          <button class="link modal-close">×</button>
+          <div class="modal-content txt-copy">
+            <h3>Feedback</h3>
+            <p>We want to hear from you! Are there other ocean planning areas we should add (send us a <a href="https://github.com/stamen/moore/blob/master/SHAPEFILE_SPECIFICATIONS.md" target="_blank" title="Documentation to submit a shapefile" target="blank">shapefile</a>!)? Or other information or updates we should take into account? Let us know. Email <a href="mailto:feedback@oceanplanning.org?subject=Feedback on map of ocean planning in the US and Canada">feedback@oceanplanning.org</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-map-modal" class="panel modal hide">
+        <div class="modal-background modal-close"></div>
+        <div class="modal-inner">
+          <button class="link modal-close">×</button>
+          <div class="modal-content txt-copy">
+            <h3>About the basemap</h3>
+            <p>This map was was created by <a href="http://stamen.com">Stamen Design</a>, a data visualization and cartography studio based in San Francisco.</p>
+            <p>The map uses a custom <a href="http://en.wikipedia.org/wiki/Map_projection">map projection</a> to show the true sizes of the coastal areas of the United States and Canada. Most web-based maps use the <a href="http://en.wikipedia.org/wiki/Mercator_projection">Mercator projection</a>, which distorts the sizes of regions near the poles, making Northern Canada and the Arctic Ocean appear much larger than they really are.</p>
+            <p>Our map uses a <a href="http://en.wikipedia.org/wiki/Lambert_azimuthal_equal-area_projection">Lambert Azimuthal Equal-area projection</a> which has been modified so that the center of the projection is at 105&deg;W, 40&deg;N. This projection shows accurate sizes everywhere on the map. However, as a side effect, north is not always "up" on this map. As you look at places that are further away from the center of the map, the curvature of the earth becomes apparent. Keep your eye on the <em>graticule lines</em> (the grid of thin blue lines out in the ocean) to help you figure out which direction is north.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <header class="nav block">
+        <div>
+          <h1 class="heading">Ocean Planning<button id="info-btn" class="link modal-activator" data-target="about-modal-all">
+            <!--
+            <svg version="1.1" width="21px" height="21px" x="0px" y="0px"
+               viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+            <circle fill="#FFFFFF" stroke="#000000" stroke-width="2.132" stroke-miterlimit="10" cx="12" cy="12" r="10.5"/>
+            <g>
+              <circle cx="11.947" cy="6.297" r="1.599"/>
+              <polygon points="13.652,17.596 13.652,10.987 13.652,9.175 9.388,9.175 9.388,10.987 10.454,10.987 10.454,17.596 9.388,17.596
+                9.388,19.302 14.612,19.302 14.612,17.596  "/>
+            </g>
+            </svg>
+            -->
+            <img src="assets/icons/i_21px.svg"/>
+          </button></h1>
+          <p class="sub-heading"><button class="link modal-activator" data-target="about-modal-us">United States</button> and <button class="link modal-activator" data-target="about-modal-ca">Canada</button></p>
+        </div>
+      </header>
+
+
+      <section class="main block">
+        <div id='map'></div>
+
+        <!-- layer controls -->
+        <div id="overlaySelectr" class="dropdown expanded">
+          <button id="overlaySelectr-close" class="link">&raquo;</button>
+          <div class="scroll-wrap">
+          <div class="inner"></div>
+          </div>
+        </div>
+        <!-- end layer controls -->
+
+        <!-- filter & details panel -->
+        <div class="panel filters">
+          <!-- filter by -->
+          <p class='txt-copy panel-headline'>Filter by status:</p>
+          <div class="filter-row status-filters">
+            <ul class="clearfix">
+              <li class="filter-reset"><button class="link filter-btn" data-key="status" data-value="reset">All<span class="counts"></span></button></li>
+              <li class="filter-implemented"><button class="link filter-btn" data-key="status" data-value="implemented">Implemented<span class="counts"></span></button></li>
+              <li class="filter-underway"><button class="link filter-btn" data-key="status" data-value="underway">Underway<span class="counts"></span></button></li>
+              <li class="filter-pre-planning"><button class="link filter-btn" data-key="status" data-value="pre-planning">Pre-planning<span class="counts"></span></button></li>
+              <li class="filter-stalled"><button class="link filter-btn" data-key="status" data-value="stalled">Stalled<span class="counts"></span></button></li>
+            </ul>
+          </div>
+
+          <div id="legend">
+            <ul>
+              <li><i class="icon"></i><span>Exclusive Economic Zone</span></li>
+              <li><i class="icon"></i><span>Planning area boundary<br/>unavailable or undefined</span></li>
+            </ul>
+          </div>
+
+          <div id="additional-actions" class="">
+            <button id="embed-btn" class="link btn-small inverse">Embed</button>
+            <button id="more-data-btn" class="link btn-small modal-activator inverse" data-target="more-data-modal">Feedback</button>
+          </div>
+        </div>
+
+
+        <div class="panel details">
+          <div class="tabs">
+            <button id="resetButton" class="link"><span class="icon-close">&#x2715;</span></button>
+            <div class="filter-row">
+              <ul class="clearfix">
+                <li><button class="link selected" data-target="details">Details</button></li>
+                <li><button class="link" data-target="description">Description</button></li>
+              </ul>
+            </div>
+            <div class="tabs-inner">
+              <div class="tab" data-tab="details">
+                <ul>
+                  <li data-key="location"><span class="key">Plan Name:</span><span class="value"></span></li>
+                  <li data-key="website"><span class="key">Website:</span><span class="value"><a href=""></a></span></li>
+                  <li data-key="status"><span class="key">Status:</span><span class="value"></span></li>
+                  <li data-key="date_planning_initiated"><span class="key">Date Planning Initiated:</span><span class="value"></span></li>
+                  <li data-key="date_plan_completed"><span class="key">Date Completed:</span><span class="value"></span></li>
+                  <li data-key="ocean_uses_covered"><span class="key">Ocean Uses Covered:</span><span class="value"></span></li>
+                  <li data-key="lead_institution"><span class="key">Lead Institution(s):</span><span class="value"></span></li>
+                </ul>
+              </div>
+              <div class="tab hide" data-tab="description">
+                <p class="txt-copy">Select a planning area.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end filter & details panel -->
+
+      </section>
+
+      <!-- embed -->
+      <div id="embed" class="modal hide">
+        <div class="modal-background modal-close"></div>
+          <div class="modal-inner txt-copy">
+            <button class="link modal-close">×</button>
+            <div class="modal-content">
+              <div class="header modal-row">
+                <h1 class="heading">Embed This Map</h1>
+              </div>
+
+              <div class="embed-iframe-wrap modal-row">
+                <p class="instructional-step">1. Preview</p>
+                <div class="mouse-blocker"></div>
+                <div id="embed-iframe"></div>
+              </div>
+
+              <div class="modal-row">
+                <p class="instructional-step">2. Copy and paste the code below for your website</p>
+                <textarea rows="3" id="copypastethis"></textarea>
+                <p class="tip">This embedded map inherits the position and data layers from the big version. If you'd like it to show another data layer, or a different place, just close this and change the big version to how you want it, then hit EMBED THIS MAP again.</p>
+              </div>
+              <p class="close"><button class="link modal-close inline">Close this pop-up</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end container -->
+
+    <script src="scripts/index.min-6577b0cd.js"></script>
+
+    <script type="text/javascript">
+    //MFOM
+    </script>
+
+    <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56895683-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+  </body>
+</html>
